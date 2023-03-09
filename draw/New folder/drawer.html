@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drawer</title>
+    <link rel="stylesheet" href="drawer.css">
+    <script defer src="drawer.js"></script>
+</head>
+<body>
+    <div class="field">
+        <div class="tools">
+            <input type="range" min="1" max="100" value="5" class="pen-range" oninput="draw_width = this.value">
+            <input oninput="draw_color = this.value" type="color" class="color-picker">
+            <input oninput="draw_color = this.value" type="text" class="pen-color" placeholder="Type the Color">
+            <button onclick="undo_last()" class="undo">↩</button>
+            <button onclick="clear_canvas()" class="clear">⨂</button>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+</html>

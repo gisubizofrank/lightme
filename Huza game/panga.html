@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="flip.css">
+    <link rel="stylesheet" href="panga.css">
+    <link rel="stylesheet" href="names.css">
+    <script defer src="panga.js"></script>
+    <title>Huza Game</title>
+</head>
+<body>
+    <div id="head">
+        <p id="play-blue">Blue</p>
+        <div id="head-center">
+            <h2 id="Game-title"><span id="one">Huza</span> <span id="two">Game</span> </h2>
+            <div id="youPlay">
+                <div id="upDown" class="red">&LeftArrowRightArrow;</div>
+            </div>
+        </div>
+        <p id="play-red">Red</p>
+    </div>
+    <div id="playGround">
+        <figure id="0" class="blue-keys">
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+            <div draggable="true" class="blue key"></div>
+        </figure>
+        <figure id="area"><img draggable="false" src="./bord.png" alt="">
+            <div id="1" class="position p1"></div>
+            <div id="2" class="position p2"></div>
+            <div id="3" class="position p3"></div>
+            <div id="4" class="position p4"></div>
+            <div id="5" class="position p5"></div>
+            <div id="6" class="position p6"></div>
+            <div id="7" class="position p7"></div>
+            <div id="8" class="position p8"></div>
+            <div id="9" class="position p9"></div>
+            <div id="10" class="position p10"></div>
+            <div id="11" class="position p11"></div>
+            <div id="12" class="position p12"></div>
+            <div id="13" class="position p13"></div>
+            <div id="14" class="position p14"></div>
+            <div id="15" class="position p15"></div>
+            <div id="16" class="position p16"></div>
+            <div id="17" class="position p17"></div>
+            <div id="18" class="position p18"></div>
+            <div id="19" class="position p19"></div>
+            <div id="20" class="position p20"></div>
+            <div id="21" class="position p21"></div>
+            <div id="22" class="position p22"></div>
+            <div id="23" class="position p23"></div>
+            <div id="24" class="position p24"></div>
+        </figure>
+        <figure id="0" class="red-keys">
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+            <div draggable="true" class="red key"></div>
+        </figure>
+    </div>
+    <figure id="names">
+        <div id="player1-cover">
+            <dir id="key1" class="flip">
+                <div class="face front">
+                    <input type="text" list="freinds" placeholder="Player 1">
+                </div>
+                <div class="face back">
+                    <span>Ready</span>
+                </div>
+            </dir>
+        </div>
+        <button id="start">Start</button>
+        <div id="player2-cover">
+            <dir id="key2" class="flip">
+                <div class="face front">
+                    <input type="text" list="freinds" placeholder="Player 2">
+                </div>
+                <div class="face back">
+                    <span>Ready</span>
+                </div>
+            </dir>
+        </div>
+        <datalist id="freinds">
+            <option value="KWIZERA Emmanuel">
+            <option value="SHEMA Victoire">
+            <option value="NKURUNZIZA Kennedy">
+            <option value="CYUSA Hamdan">
+            <option value="SHEMA Dlessing">
+            <option value="KAGABO David">
+            <option value="MUCYO Dieumerci">
+            <option value="GAJU Grace Blender">
+        </datalist>
+    </figure>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: French Script MT;
+  font-weight: bolder;
+  /* transform: translateY(-10px); */
+  display: block;
+}
+h2 span#one {
+  color: blue;
+    font-family: French Script MT;
+}
+h2 span#two {
+    color: red;
+    font-family: French Script MT;
+}
+/* .............................................. */
+
+figure#names {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: 2s ease-in-out;
+}
+figure#names div#player1-cover {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-right: 10px solid blue;
+  transition: 2s ease-in-out;
+}
+figure#names div#player2-cover {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-left: 10px solid red;
+  transition: 2s ease-in-out;
+}
+figure#names button#start{
+  font-size: 20px;
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  transition: 2s ease-in-out;
+}
+figure#names.open {
+  pointer-events: none;
+}
+figure#names.open div#player1-cover {
+  left: -100%;
+}
+figure#names.open div#player2-cover {
+  right: -100%;
+}
+figure#names.open button#start {
+  top: -100%;
+}

@@ -1,0 +1,36 @@
+body{
+    background: #000;
+    font-family: monospace;
+}
+.board{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    background: rgba(0, 0, 0, 0.438);
+    /* backdrop-filter: ; */
+    color: white;
+    border-radius: 10px;
+}
+.color{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+input{
+    transform: rotate(-90deg);
+    width: 100px;
+}
+
+.hex{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0.6);
+    font: 20px bolder;
+    font-family: cursive;
+}

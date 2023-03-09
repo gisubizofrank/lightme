@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background: rgba(0, 0, 0, 0.904);
+}
+
+.all{
+    text-align: center;
+}
+.container{
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container input{
+    padding: 10px;
+    width: 140px;
+    background: transparent;
+    border-bottom: 2px solid blue;
+    border-radius: 5px;
+    margin: 0 5px;
+    outline: none;
+}
+.container span{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+    color: rgba(11, 255, 11, 0.8);
+    pointer-events: none;
+    margin-bottom: 20px;
+}
+input#degrees{
+    color: rgb(255, 136, 0);
+    border: 2px solid rgb(255, 136, 0);
+}
+input#radians{
+    color: rgba(11, 255, 11, 0.767);
+    border: 2px solid rgba(11, 255, 11, 0.767);
+}
+input#grades{
+    color: rgb(0, 183, 255);
+    border: 2px solid rgb(0, 183, 255);
+}
+
+div#radians {
+    position: relative;
+}
+div#radians > #radians1 {
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    text-align: end;
+    /* font-variant: diagonal-fractions; */
+    position: absolute;
+    right: 7px;
+    font-family: monospace;
+    /* background: red; */
+    display: flex;
+}
+/* ...................................... */
+#diagram {
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border: 2px solid;
+    border-radius: 50%;
+    /* width: 500px;
+    height: 500px; */
+    width: 500px;
+    height: 500px;
+}
+
+.connector {
+    border: 2px dashed;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#con1 {
+    border-color: rgb(255, 136, 0);
+    width: 50%;
+    height: 87%;
+}
+#con2 {
+    border-color: lime;
+    width: 71%;
+    height: 72%;
+}
+#con3 {
+    border-color: rgb(0, 183, 255);
+    width: 87%;
+    height: 50%;
+}
+
+.line {
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#l1 {
+    width: 100%;
+    height: 2px;
+}
+
+#l2 {
+    width: 2px;
+    height: 100%;
+}
+
+.angle {
+    font-family: monospace;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.angle > p {
+    pointer-events: none;
+}
+
+.angle:hover {
+    font-size: 15px;
+}
+
+#angle1 {
+    top: 50%;
+    right: -18%;
+}
+#angle2 {
+    top: 25%;
+    right: -5%;
+}
+#angle3 {
+    top: 14%;
+    right: 4%;
+}
+#angle4 {
+    top: 6%;
+    right: 14%;
+}
+#angle5 {
+    top: -4%;
+    left: 50%;
+}
+#angle6 {
+    top: 6%;
+    left: 18%;
+}
+#angle7 {
+    top: 14%;
+    left: 10%;
+}
+#angle8 {
+    top: 25%;
+    left: 2%;
+}
+#angle9 {
+    top: 50%;
+    left: -5%;
+}
+#angle10 {
+    top: 75%;
+    left: 2%;
+}
+#angle11 {
+    top: 86%;
+    left: 10%;
+}
+#angle12 {
+    top: 95%;
+    left: 20%;
+}
+#angle13 {
+    top: 104%;
+    left: 50%;
+}
+#angle14 {
+    top: 95%;
+    right: 13%;
+}
+#angle15 {
+    top: 85%;
+    right: 2%;
+}
+#angle16 {
+    top: 75%;
+    right: -9%;
+}
+
+.trig {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    font-variant: diagonal-fractions;
+    font-weight: 900;
+    /* font-size: 24px; */
+}
+
+#trig1 {
+    top: 53%;
+    left: 72%;
+}
+#trig2 {
+    top: 53%;
+    left: 81%;
+}
+#trig3 {
+    top: 53%;
+    left: 90%;
+}
+#trig4 {
+    top: 53%;
+    left: 29%;
+}
+#trig5 {
+    top: 53%;
+    left: 20%;
+}
+#trig6 {
+    top: 53%;
+    left: 11%;
+}
+#trig7 {
+    top: 28%;
+    left: 47%;
+}
+#trig8 {
+    top: 18%;
+    left: 46%;
+}
+#trig9 {
+    top: 10%;
+    left: 46%;
+}
+#trig10 {
+    top: 73%;
+    left: 46%;
+}
+#trig11 {
+    top: 84%;
+    left: 45%;
+}
+#trig12 {
+    top: 91%;
+    left: 45%;
+}
+
+#btn {
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(red, transparent);
+    border: none;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+#btn:hover {
+    width: 25px;
+    height: 25px;
+}
+
+#btn:active {
+    background: radial-gradient(rgb(163, 0, 0), transparent);
+}
+

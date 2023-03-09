@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Light Me</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- :::::::::: styles :::::::::: -->
+    <link rel="icon" href="grunt.png">
+    <link rel="stylesheet" href="+style/lightme.css">
+    <link rel="stylesheet" href="+style/form.css">
+    <link rel="stylesheet" href="+style/projects.css">
+    <link rel="stylesheet" href="+style/load.css">
+    <link rel="stylesheet" href="+style/upload.css">
+    <link rel="stylesheet" href="+style/comment.css">
+
+    <!-- :::::::::: scripts :::::::::: -->
+    <script defer src="+script/def.js"></script>
+    <script defer src="+script/selector.js"></script>
+    <script defer src="+script/lightme.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <h2>LightMe</h2>
+        <div id="account">
+            <p><span>↣</span> Account</p>
+        </div>
+    </div>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="form" style="display: none;">
+        <div class="back"><span>←</span></div>
+        <img src="user.png" width="100" height="100" style="display: none;">
+        <input type="text" id="user-name" placeholder="User name">
+        <input type="password" id="password" placeholder="Password">
+        <input type="submit" value="no account" class="no">
+        <input type="email" id="email" placeholder="E-mail">
+        <h1>Gender:</h1>
+        <div class="gender">
+            <div id="male" class="check">
+                <div class="radio"></div>
+                <p>male</p>
+            </div>
+            <div id="female" class="check">
+                <div class="radio"></div>
+                <p>female</p>
+            </div>
+        </div>
+        <h1>Birth:</h1>
+        <div class="birth-date">
+            <input type="text" class="date" placeholder="Day">
+            <input type="text" class="date" placeholder="Month">
+            <input type="text" class="date" placeholder="Year">
+        </div>
+        <input type="file" id="img">
+    </div>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div id="container">
+        <div id="presenter">
+            <div class="bulb">
+                <div class="top"></div>
+                <div class="wire"></div>
+                <div class="bottom"></div>
+            </div>
+            <iframe id="collector" src="" frameborder="0"></iframe>
+            <button id="full-view">×</button>
+            <div id="comments-popup">
+                <div id="comments">
+                    <div class="comment">
+                        <img src="+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_17_10.png">
+                        <div class="text">
+                            <p>
+                                Lorem ipsum dolor sit amet,
+                                Excepturi odio corrupti odit.
+                            </p>
+                            <span class="name">Lorem.</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_17_10.png">
+                        <div class="text">
+                            <p>
+                                dolor sit amet, consectetur
+                                adipisicing elit. Excepturi
+                                odio corrupti odit.
+                            </p>
+                            <span class="name">dolor sit amet,</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_17_10.png">
+                        <div class="text">
+                            <p>Excepturi</p>
+                            <span class="name">Loremdolor si</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_17_10.png">
+                        <div class="text">
+                            <p>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                                Excepturi odio corrupti odit.
+                            </p>
+                            <span class="name">consectetur</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_17_10.png">
+                        <div class="text">
+                            <p id="try">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                                Excepturi odio corrupti odit.
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit.
+                                Excepturi odio corrupti odit.
+                            </p>
+                            <span class="name">sit</span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_17_10.png">
+                        <div class="text">
+                            <p>
+                                Lorem ipsum dolor
+                            </p>
+                            <span class="name">ipsum dolor</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="comment-entry">
+                    <textarea id="entry" autofocus="true"></textarea>
+                    <button id="send">Send</button>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="project" name="./+projects/color creator/creator.html">
+                <img src="/+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_17_10.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 2</span>
+                    <span>🧡: 1</span>
+                </div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/DRG/DRG.html">
+                <img src="/+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_26_45.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 0</span>
+                    <span>🧡: 0</span>
+                </div>
+                <p>
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/draw/draw.html">
+                <img src="/+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_27_21.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/cursor/anim.html">
+                <img src="/+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_31_13.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/Mara Interface/mara.html">
+                <img src="/+images/Document and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_31_40.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/Huza game/panga.html">
+                <img src="/+images/Huza Game and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_29_28.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/matrix/matrix.html">
+                <img src="/+images/Matrix O3 and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_33_54.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/my time/time.html">
+                <img src="/+images/Matrix O3 and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_34_51.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/Neumorphism/neu1.html">
+                <img src="/+images/Matrix O3 and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_35_33.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/Nzoka Game/nzoka.html">
+                <img src="/+images/Nzoka Game and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_44_06.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/OOP puzzle/puzzle.html">
+                <img src="/+images/OOP Puzzle and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_49_04.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/placeholder/placeholder.html">
+                <img src="/+images/Place Holder and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_49_34.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/position/pos.html">
+                <img src="/+images/Place Holder and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_49_54.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/ready counter/ready.html">
+                <img src="/+images/Snake Game and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_51_50.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/shine dots/dots.html">
+                <img src="/+images/Snake Game and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_53_21.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+            <div class="project"  name="./+projects/study alarm/alarm.html">
+                <img src="/+images/Work Alarm and 17 more pages - Personal - Microsoft​ Edge 2_14_23 19_55_15.png" alt="">
+                <div class="propaties">
+                    <img src="/grunt.png">
+                    <span>visits: 1</span>
+                    <span>🧡: 10</span>
+                </div>
+                <p>
+                    ipsum dolor sit.
+                    elit. Corrupti harum optio blanditiis, eveniet 
+                    doloremque quis deserunt.
+                </p>
+            </div>
+        </div>
+        <div id="upload">
+            <div id="project_uploader">
+                <p>click to upload your the project</p>
+                <iframe src="./+projects/" frameborder="0"></iframe>
+                <input type="file" id="filename" href="+projects">
+            </div>
+            <div id="image_uploader">
+                <p>click to upload the image to represent your the project</p>
+                <input type="file" id="image_uploader_input">
+                <img src="" id="image_uploader_image">
+            </div>
+            <div id="description_uploader">
+                <textarea id="description_uploader_input"></textarea>
+            </div>
+            <button id="upload_new_project">Done</button>
+        </div>
+    </div>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+</body>
+</html>
+<!-- →↣↦↠⇀⇁⇏⇒⇥⇝⇢⇨⇾⇸ -->

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nzoka Game</title>
+    <link rel="stylesheet" href="file:///F:/Small%20Projects/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="flip.css">
+    <link rel="stylesheet" href="names.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="nzoka.css">
+    <link rel="stylesheet" href="menus.css">
+    <script defer src="nzoka.js"></script>
+</head>
+
+<body class="dark-theme">
+    <div id="menus" class="dark-theme">
+        <i class="fas fa-adjust" onclick="theme()"></i>
+    </div>
+    <section id="person" class="dark-theme">
+        <div id="play1">
+            <h2 class="name">Player One</h2>
+            <p class="score">0</p>
+        </div>
+        <div id="play2">
+            <p class="score">0</p>
+            <h2 class="name">Player Two</h2>
+        </div>
+    </section>
+    <canvas id="head" class="dark-theme"></canvas>
+    <canvas id="body" class="dark-theme"></canvas>
+    <figure id="names">
+        <div id="player1-cover">
+			<input type="color" id="color1" value="#008000">
+            <dir id="key1" class="flip">
+                <div class="face front">
+                    <input type="text" list="freinds" placeholder="Player 1">
+                </div>
+                <div class="face back">
+                    <span>Ready</span>
+                </div>
+            </dir>
+        </div>
+        <button id="start">Start</button>
+        <div id="player2-cover">
+			<input type="color" id="color2" value="#ffa500">
+            <dir id="key2" class="flip">
+                <div class="face front">
+                    <input type="text" list="freinds" placeholder="Player 2">
+                </div>
+                <div class="face back">
+                    <span>Ready</span>
+                </div>
+            </dir>
+        </div>
+        <datalist id="freinds">
+            <option value="GATETE Fidel">
+            <option value="KWIZERA Emmanuel">
+            <option value="SHEMA Victoire">
+            <option value="NKURUNZIZA Kennedy">
+            <option value="CYUSA Hamdan">
+            <option value="SHEMA Dlessing">
+            <option value="KAGABO David">
+            <option value="UMUTONI Honorine">
+            <option value="MUCYO Dieumerci">
+            <option value="GAJU Grace Blender">
+            <option value="KHEZA Kakanny">
+            <option value="HABIMANA Mwiza Enzo">
+        </datalist>
+    </figure>
+</body>
+
+</html>

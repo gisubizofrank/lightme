@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+#mara {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  align-items: center;
+}
+
+.bord {
+  width: 163px;
+  height: 324px;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 25px 45px rgb(0 0 0 / 10%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+span {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+p {
+  opacity: 0.6;
+  width: 70px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  animation: changeColor 5s linear infinite;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+figure {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: orange;
+  transform: scale(0.1);
+  box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange, 0 0 60px orange,
+    0 0 80px orange, 0 0 100px orange;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 2s;
+}
+
+figure:hover::before {
+  transform: scale(0.8);
+  transition: 0s;
+}

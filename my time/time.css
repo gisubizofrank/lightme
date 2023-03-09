@@ -1,0 +1,21 @@
+#time, #substract {
+    font-size: 40px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0 10px 0;
+    /* font-family: Bahnschrift Condensed; */
+    /* font-family: Chiller; */
+    /* font-family: Colonna MT; */
+    /* font-family: Freestyle Script; */
+    font-family: French Script MT;
+    /* font-family: Niagara Solid; */
+}
+#substract{
+    font-family: Chiller;
+}

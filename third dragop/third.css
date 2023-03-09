@@ -1,0 +1,182 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#head {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#play-blue {
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: blue;
+}
+#play-red {
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: red;
+}
+#youPlay {
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 20px;
+}
+#upDown {
+  transform: rotateX(180deg);
+  transition: transform 0.5s ease-out;
+}
+#upDown.red {
+  transform: translateY(-32px);
+}
+#upDown.blue {
+  transform: translateY(-12px);
+}
+
+#playGround {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transform: scale(0.9) translateY(-40px);
+}
+
+.key {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: grab;
+  transition: all 0.3s ease-in-out;
+}
+.key.transipoted {
+  opacity: 0;
+}
+.blue.key {
+  background-color: blue;
+}
+.red.key {
+  background-color: red;
+}
+.key:hover {
+  transform: scale(1.2);
+}
+.key:active {
+  cursor: grabbing;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.position {
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0 dotted black;
+  transition: border-width 0.3s ease-out;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-size: 40px;
+}
+.position .key {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.position.open {
+  border: 3px dotted black;
+}
+.off {
+  pointer-events: none;
+}
+
+.one {
+  top: 0;
+  left: 16px;
+}
+
+.two {
+  top: 0;
+  left: 47.5%;
+}
+
+.three {
+  top: 0;
+  right: 16px;
+}
+
+.four {
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.five {
+  bottom: 0;
+  right: 16px;
+}
+
+.six {
+  bottom: 0;
+  left: 47.5%;
+}
+.seven {
+  bottom: 0;
+  left: 16px;
+}
+.eight {
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.nine {
+  top: 50%;
+  left: 47.5%;
+  transform: translateY(-50%);
+}
+
+#area {
+  position: relative;
+  height: 90%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+#area img {
+  width: 95%;
+  height: 95%;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.blue-keys {
+  display: block;
+  width: 60px;
+  height: 180px;
+}
+.red-keys {
+  display: block;
+  width: 60px;
+  height: 180px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* #x-tree {
+    
+} */

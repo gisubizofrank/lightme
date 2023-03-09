@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="alarm.css">
+    <script defer src="alarm.js"></script>
+    <title>Work Alarm</title>
+</head>
+<body>
+    <div id="container" class="big">
+        <button id="screen">&times;</button>
+        <dir id="time">00 : 00</dir>
+        <video width="10" height="10" controls>
+            <source 
+                src="file:///C:/Users/Student/Downloads/videoplayback.mp4" >
+        </video>
+        <select value="0" id="model">
+            <option value="0">none</option>
+            <option value="1"> Quetion 1 min</option>
+            <option value="2"> Quetion 2 min</option>
+            <option value="3"> Quetion 3 min</option>
+            <option value="4">Rest 4 min</option>
+            <option value="5">Rest 5 min</option>
+            <option value="25" selected>Study 25 min</option>
+            <option value="30">arrange 30 min</option>
+            <option value="60">Finish Project 60 min</option>
+        </select>
+        <button>Pause time</button>
+        <button>Reset time</button>
+        <button>Pause Video</button>
+    </div>
+</body>
+</html>

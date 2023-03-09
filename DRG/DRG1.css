@@ -1,0 +1,13 @@
+#trig-values{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-20%);
+    
+}
+#trig-values p{
+    color: orange;
+    font-family: system-ui;
+    font-style: italic;
+    /* letter-spacing: 2px; */
+}

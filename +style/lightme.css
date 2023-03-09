@@ -1,0 +1,52 @@
+* {
+    font-family: system-ui;
+    letter-spacing: 1px;
+    font-size: 15px;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(10, 5, 0);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #1f2125c9;
+    backdrop-filter: blur(5px);
+    padding: 10px 0px;
+    color: #fefefe;
+    width: 100vw;
+}
+
+#menu h2 {
+    font-family: cursive;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+h2, #account {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.form img {
+    border-radius: 50%;
+}
+
+input {
+    border: none;
+}
+
+#logedin-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}

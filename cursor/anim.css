@@ -1,0 +1,46 @@
+* {
+  cursor: none;
+}
+body {
+  transition: background .5s ease;
+}
+div#cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  transform-origin: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.479);
+  backdrop-filter: blur(15px) invert(1);
+}
+
+#verticle {
+  background: rgba(0, 0, 0, 0.479);
+  width: 2px;
+  height: 25px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#horizontal {
+  background: rgba(0, 0, 0, 0.479);
+  width: 25px;
+  height: 2px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#point {
+  /* background: red; */
+  position: fixed;
+  top: 32%;
+  left: -35%;
+  font-size: 10px;
+  width: 50px;
+}

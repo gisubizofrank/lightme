@@ -1,0 +1,50 @@
+#presenter{
+    position: relative;
+}
+.bulb{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transform: rotate(180deg) translate(50%, 50%);
+    top: 50%;
+    left: 50%;
+    align-items: center;
+}
+
+.top{
+    width: 30px;
+    height: 30px;
+    border-radius: 14px 17px 7px 17px;
+    transform: rotate(45deg);
+    background: orange;
+    box-shadow: -1px -1px 13px 3px orange;
+    border: 1px solid orange;
+    animation: beep .5s linear infinite;
+}
+.bottom{
+    width: 16px;
+    height: 26px;
+    background: #1a191f;
+}
+
+
+.wire{
+    width: 4px;
+    height: 11px;
+    background: #0125d5;
+    transition: .5s cubic-bezier(0, 0, 0.19, 1.29);
+}
+
+@keyframes beep {
+    0%{
+         box-shadow: -1px -1px 20px 9px orange;
+     }
+     50%{
+        box-shadow: -1px -1px 10px 5px orange;
+     }
+     100%{
+        box-shadow: -1px -1px 20px 9px orange;
+     }
+
+}

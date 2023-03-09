@@ -1,0 +1,160 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#head {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#play-blue {
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: blue;
+}
+#play-red {
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  color: red;
+}
+#youPlay {
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 20px;
+}
+#upDown {
+  transform: rotateX(180deg);
+  transition: transform 0.5s ease-out;
+}
+#upDown.red {
+  transform: translateY(-32px);
+}
+#upDown.blue {
+  transform: translateY(-12px);
+}
+
+#playGround {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transform: scale(0.9) translateY(-40px);
+}
+
+.key {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: grab;
+  transition: all 0.3s ease-in-out;
+}
+.key.transipoted {
+  opacity: 0;
+}
+.blue.key {
+  background-color: blue;
+}
+.red.key {
+  background-color: red;
+}
+.key:hover {
+  transform: scale(1.2);
+}
+.key:active {
+  cursor: grabbing;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.position {
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0 dotted black;
+  transition: border-width 0.3s ease-out;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-size: 40px;
+}
+.position .key {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.position.open {
+  border: 3px dotted black;
+}
+.off {
+  pointer-events: none;
+}
+/* {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+.p1 {top: 0; left: 1%}
+.p2 {top: 0; left: 48%}
+.p3 {top: 0; right: 1%}
+.p4 {top: 46%; right: 1%;}
+.p5 {bottom: 0; right: 1%}
+.p6 {bottom: 0; left: 48%}
+.p7 {bottom: 0; left: 1%}
+.p8 {top: 46%; left: 1%;}
+.p9 {top: 15%; left: 11%;}
+.p10 {top: 15%; left: 48%;}
+.p11 {top: 15%; right: 11%;}
+.p12 {top: 46%; right: 11%;}
+.p13 {bottom: 15%; right: 11%;}
+.p14 {bottom: 15%; left: 48%;}
+.p15 {bottom: 15%; left: 11%;}
+.p16 {top: 46%; left: 11%;}
+.p17 {top: 30%; left: 21%;}
+.p18 {top: 30%; left: 48%;}
+.p19 {top: 30%; right: 21%;}
+.p20 {top: 46%; right: 21%;}
+.p21 {bottom: 30%; right: 21%;}
+.p22 {bottom: 30%; left: 48%;}
+.p23 {bottom: 30%; left: 21%;}
+.p24 {top: 46%; left: 21%;}
+/* {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+#area {
+  position: relative;
+  height: 90%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+#area img {
+  width: 95%;
+  height: 95%;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.blue-keys {
+  display: block;
+  width: 60px;
+}
+.red-keys {
+  display: block;
+  width: 60px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* #x-tree {
+    
+} */

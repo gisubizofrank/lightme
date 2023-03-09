@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>draw</title>
+    <script defer src="draw.js"></script>
+    <style>
+        body {
+            /* margin: 0; */
+            padding: 0;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #tool {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <div id="tools">
+        <input type="color" id="color">
+        <input type="range" min="1" max="30" value="20" id="">
+        <span style="color: red"></span>
+        <input type="button" value="clear">
+    </div>
+</body>
+</html>
